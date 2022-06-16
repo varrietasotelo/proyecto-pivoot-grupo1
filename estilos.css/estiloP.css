@@ -9,20 +9,15 @@
     font-size: 20px;
 }
 
-body{
-    background-color: #fff59d;
-}
-
-.header{
-    
-}
-
 .barraNav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+    position: relative;
+    top: 0%;
+    z-index: 99;
 }
 
 .header .logo{
@@ -79,4 +74,30 @@ body{
     background-color: rgb(255, 255, 255);
     color: #ff9100;
     transform: scale(1.1);
+}
+
+.encabezadoI{
+    width: 100%;
+    height: auto;
+    opacity: 100%;
+    position: absolute;
+    z-index: 50;
+}
+
+.cuadroE {
+    z-index: 60;
+    opacity: 100%;
+    position: fixed;
+    top: 5rem;
+    padding: 50px;
+    width: 55%;
+}
+
+.textoEH{
+    font-size: 25px;
+}
+
+.textoEP{
+    font-size: 15px;
+    padding-top: 10px;
 }
