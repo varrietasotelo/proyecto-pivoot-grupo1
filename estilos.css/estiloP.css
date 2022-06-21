@@ -82,22 +82,31 @@
     opacity: 100%;
     position: absolute;
     z-index: 50;
+    top: 0%;
 }
 
 .cuadroE {
     z-index: 60;
+    position: relative;
     opacity: 100%;
-    position: fixed;
-    top: 5rem;
+    top: 7rem;
+    left: 7rem;
     padding: 50px;
-    width: 55%;
+    width: 40%;
 }
 
 .textoEH{
-    font-size: 25px;
+    font-size: 55px;
 }
 
 .textoEP{
-    font-size: 15px;
+    font-size: 25px;
     padding-top: 10px;
+}
+
+.imgP{
+    position: relative;
+    bottom: 0rem;
+    right: 10rem;
+    float: right;
 }
