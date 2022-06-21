@@ -83,6 +83,7 @@
     position: absolute;
     z-index: 50;
     top: 0%;
+    background-image: url(https://drive.google.com/drive/folders/1tkb5HKO_E_OJC24pbn0sSh0GMp8Bew8W)
 }
 
 .cuadroE {
@@ -106,7 +107,10 @@
 
 .imgP{
     position: relative;
-    bottom: 0rem;
     right: 10rem;
-    float: right;
+    z-index: 65;
+    width: 20%;
+    top: -265px;
+    right: 5px;
+    left: 65rem;
 }
