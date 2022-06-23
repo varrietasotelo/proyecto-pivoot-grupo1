@@ -71,7 +71,8 @@ box-sizing: border-box;
 }
 .password-olvidada{
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 90px;
+    margin-left: 90px;
 }
 .input input{
     width: 100%;
@@ -93,4 +94,10 @@ box-sizing: border-box;
     
     cursor: pointer;
     background-color: #FFAD60;
+}
+.C-olvidada{
+    text-decoration: none;
+    color: grey;
+    float: left;
+    font-size: 15px;
 }
