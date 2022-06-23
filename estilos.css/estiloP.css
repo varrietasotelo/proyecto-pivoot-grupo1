@@ -118,6 +118,8 @@
 
 .contenedor_clase{
     background-color: antiquewhite;
+    z-index: 60px;
+    
 }
 
 @media screen and (max-width: 1000px) {
