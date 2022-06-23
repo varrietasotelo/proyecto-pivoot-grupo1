@@ -55,14 +55,13 @@ box-sizing: border-box;
     padding: 50px;
     background-color: #ffff;
 }
-.texto-formulario, h2{
-    font-size: 40px;
-}
+
 .input label{
     display: block;
-    font-size: 22px;
     font-weight: bold;
     margin: 20px 0;
+    font-size: 18px;
+    color: rgb(90, 89, 89);
 }
 .fondo-formulario{
     background-image: url(../img/ASSETS/fondologin.svg);
@@ -71,7 +70,7 @@ box-sizing: border-box;
 }
 .password-olvidada{
     display: inline-block;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: 90px;
 }
 .input input{
@@ -100,4 +99,19 @@ box-sizing: border-box;
     color: grey;
     float: left;
     font-size: 15px;
+}
+.facebook{
+    width: 25px;
+    height: 25px;
+    opacity: 80%;
+    float: right;
+    cursor: pointer;
+}
+.iniciar_sesion{
+    font-size: 25px;
+    color: rgb(90, 89, 89);
+}
+.textoF{
+    font-size: 15px;
+    color: rgb(90, 89, 89);
 }
