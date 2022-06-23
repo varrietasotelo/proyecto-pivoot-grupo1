@@ -6,7 +6,7 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    max-width: 2000px;
+    max-width: 100%;
 }
 
 .barraNav{
@@ -78,7 +78,7 @@
 
 .encabezadoI{
     width: 100%;
-    height: 60rem;
+    height: auto;
     opacity: 100%;
     z-index: 55;
     top: 0%;
@@ -158,5 +158,41 @@
     }
     .header .logo img{
         height: 45px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .imgP{
+        display: none;
+    }
+    .cuadroE{
+        padding: 5px;
+        top: -10px;
+        overflow: hidden;
+    }
+    .textoEP{
+        font-size: 10px;
+        overflow: hidden;
+    }
+    .textoEH{
+        font-size: 15px;
+        overflow: hidden;
+    }
+    .encabezadoI{
+        height: auto;
+        overflow: hidden;
+        background-image: none;
+        background-color: #ff9100;
+    }
+    .header .nav-links a{
+        font-size: 9px;
+    }
+    .header .btn button{
+        font-size: 9px;
+    }
+    .header .logo img{
+        height: 15px;
+        width: auto;
     }
 }
