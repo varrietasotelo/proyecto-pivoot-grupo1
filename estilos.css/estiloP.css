@@ -89,19 +89,19 @@
 .cuadroE {
     z-index: 60;
     position: relative;
+    top: -590px;
     opacity: 100%;
-    top: 7rem;
-    left: 7rem;
     padding: 50px;
     width: 40%;
+    margin-left: 140px;
 }
 
 .textoEH{
-    font-size: 55px;
+    font-size: 45px;
 }
 
 .textoEP{
-    font-size: 25px;
+    font-size: 22px;
     padding-top: 10px;
 }
 
@@ -110,11 +110,12 @@
     right: 10rem;
     z-index: 65;
     max-width: 20%;
-    top: -265px;
+    top: 160px;
     right: 5px;
     left: 65rem;
     overflow: hidden;
     margin-right: 50px;
+    margin-bottom: 5px;
 }
 
 .contenedor_clase{
@@ -128,20 +129,34 @@
         position: relative;
         left: 30rem;
         right: 15rem;
-        top: -239px;
+        top: 40px;
+        overflow: hidden;
     }
     .textoEP{
         font-size: 15px;
+        overflow: hidden;
     }
     .textoEH{
         font-size: 35px;
+        overflow: hidden;
     }
     .cuadroE{
         padding: 15px;
-        top: 3rem;
+        top: -350px;
+        overflow: hidden;
     }
     .encabezadoI{
         height: auto;
         background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .header .nav-links a{
+        font-size: 15px;
+    }
+    .header .btn button{
+        font-size: 15px;
+    }
+    .header .logo img{
+        height: 45px;
     }
 }
