@@ -4,7 +4,7 @@
 }
 
 body {
-    background: white;
+    background-image: url('../img/ASSETS/fondologin.svg');
     color:  #000000;
     line-height: 1.6;
     font-family: 'Nunito', sans-serif;
