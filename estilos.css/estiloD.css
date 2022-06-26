@@ -8,10 +8,36 @@
     --blanco: #ffffff;
     --gris: #DAD2CF;
     --naranja: #F2810C;
-    --amarillo: #F2B50C;
+    --amarillo: rgba(253, 250, 86, 0.623);
+    --negro: #000000;
 }
 
 body{
     overflow: hidden;
     font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    color: var(--negro);
+}
+
+#sidebar-container {
+    min-height: 100vh;
+    width: 20rem;
+}
+
+#sidebar-container .logo {
+    padding: 30px 30px;
+}
+
+#sidebar-container .menu {
+    width: 18rem;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.primero{
+    background-color: var(--blanco) !important;
+}
+
+a:hover {
+    text-decoration: none;
 }
