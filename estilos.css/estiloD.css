@@ -34,8 +34,8 @@ body{
     text-decoration: none;
 }
 
-.primero{
-    background-color: var(--blanco) !important;
+.bg-primary{
+    background-color: var(--naranja) !important;
 }
 
 a:hover {
