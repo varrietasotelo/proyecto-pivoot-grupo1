@@ -3,3 +3,15 @@
 *{
     font-family: 'Nunito', sans-serif;
 }
+
+:root{
+    --blanco: #ffffff;
+    --gris: #DAD2CF;
+    --naranja: #F2810C;
+    --amarillo: #F2B50C;
+}
+
+body{
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
