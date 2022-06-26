@@ -6,7 +6,7 @@
 
 :root{
     --blanco: #ffffff;
-    --gris: #DAD2CF;
+    --gris: #ececec;
     --naranja: #F2810C;
     --amarillo: rgba(253, 250, 86, 0.623);
     --negro: #000000;
@@ -79,7 +79,8 @@ a:hover {
 .container-I{
     float: right;
     width: 75%;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .elementos{
@@ -89,5 +90,74 @@ a:hover {
     color: var(--blanco);
     padding-left: 50px;
     float: left;
-    border-radius: 10%;
+    border-radius: 5%;
+    padding: 15px;
+}
+
+.Img-2{
+    width: 18%;
+    height: 18%;
+    float: left;
+    border-radius: 50%;
+    background-color: rgb(123, 231, 123);
+    padding: 12px;
+    margin: 5px;
+    margin-right: 25px;
+}
+
+.Img-3{
+    width: 18%;
+    height: 18%;
+    float: left;
+    border-radius: 50%;
+    background-color: rgb(206, 39, 248);
+    padding: 12px;
+    margin: 5px;
+    margin-right: 25px;
+}
+
+.Img-4{
+    width: 18%;
+    height: 18%;
+    float: left;
+    border-radius: 50%;
+    background-color: rgb(255, 190, 233);
+    padding: 12px;
+    margin: 5px;
+    margin-right: 25px;
+}
+
+.Img-5{
+    width: 18%;
+    height: 18%;
+    float: left;
+    border-radius: 50%;
+    background-color: rgb(244, 255, 88);
+    padding: 12px;
+    margin: 5px;
+    margin-right: 25px;
+}
+
+.elementos:hover{
+    background-color: var(--naranja);
+    color: #DAD2CF;
+} 
+
+.elementos h4{
+    color: #000000;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.elementos p{
+    color: #000000;
+    margin-left: 25px;
+}
+
+.elementos h4:hover{
+    color: aliceblue;
+}
+
+.menu a:hover{
+    background-color: var(--gris);
 }
