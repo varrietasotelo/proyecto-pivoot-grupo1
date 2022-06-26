@@ -196,3 +196,56 @@
         width: auto;
     }
 }
+
+.mod{
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 45px;
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 5px;
+    width: 30%;
+    height: auto;
+    text-align: justify;
+    padding: 40px;
+    box-shadow: 0px 0px 7px 0 rgba(240, 235, 235, 0.849);
+    color: dimgrey;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+
+h4{
+    text-align: center;
+}
+
+.img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
