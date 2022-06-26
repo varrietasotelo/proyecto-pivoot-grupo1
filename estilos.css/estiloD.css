@@ -75,3 +75,18 @@ a:hover {
     font-weight: bold;
     font-size: medium;
 }
+
+.container-I{
+    float: right;
+    width: 75%;
+    margin: 10px;
+}
+
+.elementos{
+    background-color: var(--blanco);
+    width: 40%;
+    margin: 25px;
+    color: var(--blanco);
+    padding-left: 50px;
+    float: right;
+}
