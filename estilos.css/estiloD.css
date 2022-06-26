@@ -84,9 +84,10 @@ a:hover {
 
 .elementos{
     background-color: var(--blanco);
-    width: 40%;
+    width: 45%;
     margin: 25px;
     color: var(--blanco);
     padding-left: 50px;
-    float: right;
+    float: left;
+    border-radius: 10%;
 }
