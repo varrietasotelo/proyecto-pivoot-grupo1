@@ -1,0 +1,147 @@
+body{
+    display:flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #000000;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #ff9100;
+    padding: 9px 25px;
+    background: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: rgb(255, 255, 255);
+    color: #ff9100;
+    transform: scale(1.1);
+}
+html{
+box-sizing: border-box;
+}
+
+*,* ::after, ** ::before{
+    box-sizing: border-box;
+}
+
+.contenedor-formulario{
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 50%;
+}
+.imagen-formulario{
+    background-image: url('../img/ASSETS/fondolog.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    flex: 0 0 calc(60%);
+
+}
+
+@media (min-width:768px) {
+    .imagen-formulario{
+        height: auto;
+    }
+}
+@media(min-width:768px){
+    .contenedor-formulario{
+        display: flex;
+    }
+}
+.formulario{
+    padding: 50px;
+    background-color: #ffff;
+}
+.texto-formulario, h2{
+    font-size: 40px;
+}
+.input label{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.fondo-formulario{
+    background-image: url(../img/ASSETS/fondologin.svg);
+    width: auto;
+    height: auto;
+    padding: auto;
+}
+.password-olvidada{
+    display: inline-block;
+    margin-top: 20px;
+}
+.input input{
+    width: 100%;
+    padding: 5px 6px;
+    border-radius: 5px;
+    outline: none;
+}
+.input input[type="submit"]{
+    background-color: #ff9100;
+    border-radius: 20px;
+    color: #ffff;
+    font-size: 20px;
+    margin-top: 20px;
+    border: none;
+    transition: background-color .3s ease-in-out;
+
+}
+.input input[type="submit"]:hover{
+    
+    cursor: pointer;
+    background-color: #FFAD60;
+}
