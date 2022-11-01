@@ -6,56 +6,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto Pivoot</title>
         <link rel="stylesheet" href="estilos.css/estiloP.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     <body>
-        <header class="header">
-            <div class="encabezadoI">
-                <div class="barraNav" >
-                    <div class="logo"><img src="img/logo-removebg-preview.png" alt="">
-                    </div>
-                    <nav>
-                    <ul class="nav-links">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="#">PIVOOT</a></li>
-                            <li><a href="#">Funcionalidades</a></li>
-                            <li><a href="#">Modulos</a></li>
-                            <li><a href="#">Ventajas</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                    </ul>            
-                    </nav>
-                    <a class="btn" href="login.html"><button>Iniciar Sesion</button></a>
-                </div>        
-            
-                <div> <img src="img/ASSETS/foto-pivoot.png" class="imgP" alt=""></div>
-    
-                <div class="cuadroE">
-                    <h1 class="textoEH">Administra tu escuela deportiva con PIVOOT</h1>
-                    <P class="textoEP">Pivoot te brinda un servicio para gestionar y administrar tus categorias, tener un mejor control de los usuarios y jugadores que hacen parte del sistema, ademas de tener un control de asistencia y rendimineto de cada jugador de la escuela.</P>
+        <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"><img src="img/logo-removebg-preview.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">PIVOOT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Funcionalidades</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#modulos_principales">Modulos</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="#">Ventajas</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>
+              </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-black" type="button" href="login.html">Iniciar Sesion</button>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+     <div class="container">
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Administra tu escuela deportiva con PIVOOT</h5>
+                        <p class="card-text"> Pivoot te brinda un servicio para gestionar y administrar tus categorias, tener un mejor control de los usuarios y jugadores que hacen parte del sistema, ademas de tener un control de asistencia y rendimineto de cada jugador de la escuela.
+                        </p>
+                     </div>
+                 </div>
+              </div>
+             <div class="col">
+                <div class="card">            
+                    <div class="card-body">
+                        <img src="img/ASSETS/foto-pivoot.png" class="img-fluid imgP" alt="">
+                         </div>                   
                 </div>
             </div>
-    </header>
-    <section class="mod">
+    <section class="mod" id="modulos_principales">
         <div>
             <p class="sobre-nosotros">Módulos Principales</P>
-            <div class="cards">
-                
-                <div class="card">
-                    <img class="img" src="img/ASSETS/icons/categoria.png" alt="">
-                    <h4><br>Categorías</h4>
-                    <p>Su función es asignar por edades a cada jugador que se encuentre el sistema en PIVOOT a una categoría.</p>
-                </div>
-                <div class="card">
-                    <img class="img" src="img/ASSETS/icons/usuario-jugadores.png" alt="">
-                    <h4><br>Usuarios</h4>
-                    <p>Un jugador registrado en el sistema tendrá acceso al sistema autenticandose con correo y clave el cual se le suministra apenas su registro haya sido exitoso.</p>
-                </div>
-                <div class="card">
-                    <img class="img" src="img/ASSETS/icons/director.png" alt="">
-                    <h4><br>Director General</h4>
-                    <p>El director general tendrá acceso a todas las funcionalidades que maneje el sistema incluyendo los módulos que este maneja.</p>
-                </div>
-            </div>
         </div>
     </section>
+    <div class="container text-center justify-content-evenly prefix">
+        <div class="row align-items-center">
+          <div class="border rounded col shadow p-3 mb-5 bg-white rounded" >
+            <img class="img" src="img/ASSETS/icons/categoria.png" alt="">
+                <h4><br>Categorías</h4>
+                <p>Su función es asignar por edades a cada jugador que se encuentre en el sistema PIVOOT a una categoría.</p>
+          </div>
+          <div class="border rounded col shadow p-3 mb-5 bg-white rounded">
+            <img class="img" src="img/ASSETS/icons/usuario-jugadores.png" alt="">
+                <h4><br>Usuarios</h4>
+                <p>Un jugador registrado en el sistema tendrá acceso al sistema autenticandose con correo y clave el cual se le suministra apenas su registro haya sido exitoso.</p>
+          </div>
+          <div class="border rounded col shadow p-3 mb-5 bg-white rounded">
+            <img class="img" src="img/ASSETS/icons/director.png" alt="">
+            <h4><br>Director General</h4>
+            <p>El director general tendrá acceso a todas las funcionalidades que maneje el sistema incluyendo los módulos que este maneja.</p>
+        </div>
+        </div>
+      </div>
 </body>
 </html>
