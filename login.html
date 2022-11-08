@@ -11,21 +11,14 @@
   <div class="contenedor-formulario">
     <div class="imagen-formulario">
     </div>
-    <form class="formulario">
-    <form class="formulario" action="/dashboard.html">
+    <form class="formulario" action="/proyecto-pivoot-grupo1/dashboard.html">
         <div><img src="img/facebook.png" class="facebook" alt=""></div>
         <div class="texto-formulario">
             <h2 class="iniciar_sesion">Iniciar sesión</h2>
         </div>
         <div class="input">
             <label for="correo" class="TextoF">Correo usuario</label>
-            <input placeholder="Correo" type="text" id="correo">
-        </div>
-        <div class="input">
-            <label for="contraseña" class="TextoF">Contraseña </label>
-            <input placeholder="Password" type="password" id="contraseña">
             <input placeholder="ejemplo@dominio.com" type="email" id="correo" required>
-        </div>
         <div class="input">
             <label for="contraseña" class="TextoF">Contraseña</label>
             <input placeholder="Contraseña registrada" type="password" id="contraseña" required>
@@ -33,13 +26,15 @@
         <div class="input">
             <input type="submit" value="Ingresar">
         </div>
-        <div class="password-olvidada">
-            <a href="index.html" class="C-olvidada">¿Olvidaste tu contraseña?</a>
-        </div>
-        <div class="password-olvidada">
-            <a href="dashboard.html" class="C-olvidada">Observa como es la aplicacion</a>
-        </div>
     </form>
+    <div class="password-olvidada">
+        <script>
+            function forgotPassword() {
+              let person = prompt("Ingrese su correo electrónico y verifique la contraseña de seguridad enviada.", "ejemplo@dominio.com");
+            }
+            </script>
+        <input onclick="forgotPassword()" class="C-olvidada" type="button" value="¿Olvidaste tu contraseña?">
+    </div>
   </div>
 </body>
 </html>

@@ -73,13 +73,13 @@ box-sizing: border-box;
 }
 
 .password-olvidada{
-    display: inline-block;
+    display: block;
     margin-top: 70px;
-    margin-left: 90px;
+    align-items: center;
 }
 
 .password-olvidada{
-    text-align: center;
+    align-items: center;
     margin-top: 40px;
 }
 
@@ -106,13 +106,7 @@ box-sizing: border-box;
 }
 
 .C-olvidada{
-    text-decoration: none;
-    color: grey;
-    float: left;
-    font-size: 15px;
-}
-
-.C-olvidada{
+    text-align: center;
     text-decoration: none;
     color: grey;
     font-size: 15px;
