@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
 *{
-    background:;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -33,6 +32,7 @@ box-sizing: border-box;
     margin-left: 200px;
     margin-right: 200px;
 }
+
 .imagen-formulario{
     background-image: url('../img/ASSETS/fondolog.jpg');
     background-position: center center;
@@ -46,11 +46,13 @@ box-sizing: border-box;
         height: auto;
     }
 }
+
 @media(min-width:768px){
     .contenedor-formulario{
         display: flex;
     }
 }
+
 .formulario{
     padding: 50px;
     background-color: #ffff;
@@ -63,21 +65,31 @@ box-sizing: border-box;
     font-size: 18px;
     color: rgb(90, 89, 89);
 }
+
 .fondo-formulario{
     background-image: url(../img/ASSETS/fondologin.svg);
     width: 1100px;
     height: 1100px;
 }
+
 .password-olvidada{
     display: inline-block;
     margin-top: 70px;
     margin-left: 90px;
 }
+
+.password-olvidada{
+    text-align: center;
+    margin-top: 40px;
+}
+
 .input input{
     width: 100%;
     padding: 5px 6px;
     outline: none;
+    font-size: 18px;
 }
+
 .input input[type="submit"]{
     background-color: #ff9100;
     border-radius: 20px;
@@ -86,19 +98,26 @@ box-sizing: border-box;
     margin-top: 20px;
     border: none;
     transition: background-color .3s ease-in-out;
-
 }
+
 .input input[type="submit"]:hover{
-    
     cursor: pointer;
     background-color: #FFAD60;
 }
+
 .C-olvidada{
     text-decoration: none;
     color: grey;
     float: left;
     font-size: 15px;
 }
+
+.C-olvidada{
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+}
+
 .facebook{
     width: 25px;
     height: 25px;
@@ -106,10 +125,12 @@ box-sizing: border-box;
     float: right;
     cursor: pointer;
 }
+
 .iniciar_sesion{
     font-size: 25px;
     color: rgb(90, 89, 89);
 }
+
 .textoF{
     font-size: 15px;
     color: rgb(90, 89, 89);
