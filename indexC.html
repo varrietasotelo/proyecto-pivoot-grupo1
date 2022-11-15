@@ -8,31 +8,117 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <title>Contacto-PIVOOT</title>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <title>CI-NOTICIAS</title>
+    </head>
 <body>
-    <div class="card" style="width: 18rem;">
-        <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Nombre Completo</label>
-              <input type="text" class="form-control" id="inputEmail4">
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+            <div class="col-2">
             </div>
-            <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="inputEmail4">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header text-center border border-info">
+                        <h2 class="text-info">CONTACTO PT</h2>
+                    </div>
+                    <div class="card-body">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">NOMBRE COMPLETO</label>
+                              <input type="TEXT" class="form-control" required id="title">
+                              <div class="container bg-danger" style="display: none;" id="message-Error-Title">
+                                <p class="text-white">Este campo esta vacio</p>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">EMAIL</label>
+                              <input type="email" class="form-control" required id="title">
+                            <br>
+                            <div class="row">
+                              <div class="col">
+                                <label for="exampleInputEmail1" class="form-label">TELEFONO</label>
+                                <input type="text" class="form-control" aria-label="First name">
+                                <div class="container bg-danger" style="display: none;" id="message-Error-Title">
+                                <p class="text-white">Este campo esta vacio</p>
+                              </div>
+                              <div class="col">
+                                <label for="exampleInputEmail1" class="form-label">ASUNTO</label>
+                                <input type="text" class="form-control" aria-label="Last name">
+                              </div>
+                            </div>
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">MENSAJE</label>
+                              <textarea class="form-control resize" cols="100" rows="5"  required id="content"></textarea>
+                              <div class="container bg-danger" style="display: none;" id="message-Error-contenido">
+                                <p class="text-white">Este campo esta vacio</p>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-outline-info large" onclick="SaveData()" data-bs-toggle="modal" data-bs-target="#staticBackdrop">ENVIAR</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6" >
-              <label for="inputPassword4" class="form-label">Numero de Telefono</label>
-              <input type="phone" class="form-control" id="inputPassword4">
+            <div class="col-2">
+
             </div>
-            <div class="col-md-6" >
-                <label for="inputPassword4" class="form-label">Asunto</label>
-                <input type="text" class="form-control" id="inputPassword4">
-              </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-          </form>
         </div>
+      </div>
+
+  
 </body>
+</html>
+<script type="text/javascript">
+//varibles que contienen la misma informacion del formulario
+var titulo;
+var contenido;
+var estado;
+
+    function SaveData(){
+
+        titulo=$('#title').val();
+        contenido=$('#content').val();
+        estado=$('#estatus').val();
+        
+        //console.log(titulo);
+        //console.log(contenido);
+        //console.log(estatus);
+
+        if(titulo == undefined || titulo == null || titulo == ''){
+          $('#message-Error-Title').show();
+          return false;
+        }else{
+          $('#message-Error-Title').hide();
+        }
+        
+        if(contenido == undefined || contenido == null || contenido == ''){
+          $('#message-Error-contenido').show();
+          return false;
+        }else{
+          $('#message-Error-contenido').hide();
+        }
+        
+        
+        if(estado == 0 ){
+          $('#message-Error-estatus').show();
+          return false;
+        }else{
+          $('#message-Error-estatus').hide();
+        }
+
+        $('#button_1').click
+    }
+
+</script>
 </html>
