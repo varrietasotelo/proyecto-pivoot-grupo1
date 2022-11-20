@@ -16,7 +16,7 @@
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <h3>Contacto PIVOOT</h3>
-                <form id="form" action="#" class="form">
+                <form id="form" action="./index.html" class="form">
                     <p>
                         <label for="name">Nombre Completo</label>
                         <input type="text" name="name" id="name" autofocus>
@@ -38,7 +38,7 @@
                         <textarea name="message" rows="3" id="massage" type="massage"></textarea>
                     </p>
                     <p class="block">
-                        <button type="submit" id="EnvioaCorreo" href="mailto:pivootproyect@gmail.com">
+                        <button type="submit">
                             Enviar
                         </button>
                     </p>
@@ -61,18 +61,5 @@
             </div>
         </div>
     </div>
-    <script>
-        const $form = document.querySelector('#form')
-        const $buttonMailto = document.querySelector('#EnvioaCorreo')
-
-        $form.addEventListener('submit', handleSubmit)
-
-        function handleSubmit(event){
-            event.preventDefault()
-            const form = new FormData(this)
-            $buttonMailto.setAttribute('href', 'mailto:pivootproyect@gmail.com?subject${form.get('name')}${form.get('email')}&{form.get('message')}&body=&{form.get('affair')}')
-            $buttonMailto.click()
-        }
-    </script>
 </body>
 </html>
