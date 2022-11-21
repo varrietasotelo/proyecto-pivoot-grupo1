@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios Pivoot</title>
+    <link rel="stylesheet" href="estilos.css/estiloL.css">
+</head>
+<body class="fondo-formulario">
+  <div class="contenedor-formulario">
+    <div class="imagen-formulario">
+    </div>
+    <form class="formulario" action="/proyecto-pivoot-grupo1/dashboard.html">
+        <div><img src="img/facebook.png" class="facebook" alt=""></div>
+        <div class="texto-formulario">
+            <h2 class="iniciar_sesion">Iniciar sesión</h2>
+        </div>
+        <div class="input">
+            <label for="correo" class="TextoF">Correo usuario</label>
+            <input placeholder="ejemplo@dominio.com" type="email" id="correo" required>
+        <div class="input">
+            <label for="contraseña" class="TextoF">Contraseña</label>
+            <input placeholder="Contraseña registrada" type="password" id="contraseña" required>
+        </div>
+        <div class="input">
+            <input type="submit" value="Ingresar">
+        </div>
+    </form>
+    <div class="password-olvidada">
+        <script>
+            function forgotPassword() {
+              let person = prompt("Ingrese su correo electrónico y verifique la contraseña de seguridad enviada.", "ejemplo@dominio.com");
+            }
+            </script>
+        <input onclick="forgotPassword()" class="C-olvidada" type="button" value="¿Olvidaste tu contraseña?">
+    </div>
+  </div>
+</body>
+</html>
