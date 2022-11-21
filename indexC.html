@@ -21,9 +21,28 @@
         <title>CI-NOTICIAS</title>
     </head>
 <body>
+  <br>
+  <nav class="navbar navbar-expand-lg bg-warning" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="img/logo-removebg-preview.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        </ul>
+        <form class="d-flex" role="search">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item justify content-end btn btn-light">
+                <a href="login.html"> <button class="btn btn-outline-black" type="button">Iniciar Sesion</button></a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
       <br>
-      <br>
-      <br>
+    <form action="https://formsubmit.co/pivootproyect@email.com" method="POST">
       <div class="container">
         <div class="row">
             <div class="col-2">
@@ -35,34 +54,25 @@
                     </div>
                     <div class="card-body">
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">NOMBRE COMPLETO</label>
-                              <input type="TEXT" class="form-control" required id="title">
-                              <div class="container bg-danger" style="display: none;" id="message-Error-Title">
-                                <p class="text-white">Este campo esta vacio</p>
-                            </div>
+                              <label for="Nombre" class="form-label">NOMBRE COMPLETO</label>
+                              <input type="text" class="form-control" required id="name">
                             <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">EMAIL</label>
-                              <input type="email" class="form-control" required id="title">
+                              <label for="email" class="form-label">EMAIL</label>
+                              <input type="email" class="form-control" required id="email">
                             <br>
                             <div class="row">
                               <div class="col">
-                                <label for="exampleInputEmail1" class="form-label">TELEFONO</label>
-                                <input type="text" class="form-control" aria-label="First name">
-                                <div class="container bg-danger" style="display: none;" id="message-Error-Title">
-                                <p class="text-white">Este campo esta vacio</p>
-                              </div>
+                                <label for="phone" class="form-label">TELEFONO</label>
+                                <input type="text" class="form-control" aria-label="First name" id="phone">
                               <div class="col">
-                                <label for="exampleInputEmail1" class="form-label">ASUNTO</label>
-                                <input type="text" class="form-control" aria-label="Last name">
+                                <label for="asunto" class="form-label">ASUNTO</label>
+                                <input type="text" class="form-control" aria-label="Last name" id="asunto">
                               </div>
                             </div>
                             </div>
                             <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">MENSAJE</label>
-                              <textarea class="form-control resize" cols="100" rows="5"  required id="content"></textarea>
-                              <div class="container bg-danger" style="display: none;" id="message-Error-contenido">
-                                <p class="text-white">Este campo esta vacio</p>
-                              </div>
+                              <label for="mensaje" class="form-label">MENSAJE</label>
+                              <textarea class="form-control resize" cols="100" rows="5"  required id="mensaje"></textarea>
                             </div>
                     </div>
                     <div class="card-footer text-center">
@@ -71,54 +81,53 @@
                 </div>
             </div>
             <div class="col-2">
-
             </div>
         </div>
       </div>
-
+    </form>
   
 </body>
 </html>
-<script type="text/javascript">
-//varibles que contienen la misma informacion del formulario
-var titulo;
-var contenido;
-var estado;
 
-    function SaveData(){
+////varibles que contienen la misma informacion del formulario
+//var titulo;
+//var contenido;
+//var estado;
+//
+//    function SaveData(){
+//
+//        titulo=$('#title').val();
+//        contenido=$('#content').val();
+//        estado=$('#estatus').val();
+//        
+//        //console.log(titulo);
+//        //console.log(contenido);
+//        //console.log(estatus);
+//
+//        if(titulo == undefined || titulo == null || titulo == ''){
+//          $('#message-Error-Title').show();
+//          return false;
+//        }else{
+//          $('#message-Error-Title').hide();
+//        }
+//        
+//        if(contenido == undefined || contenido == null || contenido == ''){
+//          $('#message-Error-contenido').show();
+//          return false;
+//        }else{
+//          $('#message-Error-contenido').hide();
+//        }
+//        
+//        
+//        if(estado == 0 ){
+//          $('#message-Error-estatus').show();
+//          return false;
+//        }else{
+//          $('#message-Error-estatus').hide();
+//        }
+//
+//        $('#button_1').click
+//    }
 
-        titulo=$('#title').val();
-        contenido=$('#content').val();
-        estado=$('#estatus').val();
-        
-        //console.log(titulo);
-        //console.log(contenido);
-        //console.log(estatus);
 
-        if(titulo == undefined || titulo == null || titulo == ''){
-          $('#message-Error-Title').show();
-          return false;
-        }else{
-          $('#message-Error-Title').hide();
-        }
-        
-        if(contenido == undefined || contenido == null || contenido == ''){
-          $('#message-Error-contenido').show();
-          return false;
-        }else{
-          $('#message-Error-contenido').hide();
-        }
-        
-        
-        if(estado == 0 ){
-          $('#message-Error-estatus').show();
-          return false;
-        }else{
-          $('#message-Error-estatus').hide();
-        }
-
-        $('#button_1').click
-    }
-
-</script>
 </html>
