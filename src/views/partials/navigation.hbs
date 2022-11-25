@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg bg-warning">
+  <a class="navbar-brand" href="/auth/inicio"><img src="https://i.postimg.cc/PqP9rJTF/logo-removebg-preview.png" alt="" style="float:left; "></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon bg-dark"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="/jugador/registroJ">Jugadores</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link text-white" href="#">Entrenadores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">Categorias</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Entrenamiento
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/usuario">Ver Actividades</a>
+          <a class="dropdown-item" href="/usuario/add">Crear Actividad</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Sesion {{{UsuNombre}}}
+        </a>
+        
+        <div class="dropdown-menu">
+        
+          <a class="dropdown-item" href="/signin">Iniciar Sesion</a>
+          <a class="dropdown-item" href="/signup">Registro</a>
+        {{#if UsuNombre}}
+          <a class="dropdown-item" href="/logout">Logout</a>
+        {{/if}}
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <a class="navbar-brand" href="/auth/inicio"><img src="https://i.postimg.cc/PqP9rJTF/logo-removebg-preview.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a role="button" class="btn-outline-warning btn-lg " aria-pressed="true" class="nav-link" href="/Admin/dashboard">DASHBOARD</a>
+      </li>
+      <li class="nav-item active">
+        <a role="button" class="btn-warning btn-lg shadow" aria-pressed="true" class="nav-link" href="/logout">LOG OUT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container p-4">
+    <div class="col-md-4 mx-auto">
+        <div class="card-body">
+            <form action="/jugador/registroJ" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="UsuNombre" placeholder="Digite el nombre de usuario" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="JugNombre" placeholder="Nombre" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="JugApellido" placeholder="Apellidos" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="JugDocumento" placeholder="Digite su documento de identidad" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="JugTelefono" placeholder="Telefono de acudiente" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="JugCorreo" placeholder="Correo de acudiente" autofocus>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning btn-block">
+                        Guardar
+                    </button>
+                {{#if err2}}
+                            <p class="text-danger text-center">{{err2}}</p>
+                {{/if}}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

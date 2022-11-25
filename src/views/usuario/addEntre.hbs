@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <a class="navbar-brand" href="/auth/inicio"><img src="https://i.postimg.cc/PqP9rJTF/logo-removebg-preview.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a role="button" class="btn-outline-warning btn-lg " aria-pressed="true" class="nav-link" href="/Entrenador/dashboardE">DASHBOARD</a>
+      </li>
+      <li class="nav-item active">
+        <a role="button" class="btn-warning btn-lg shadow" aria-pressed="true" class="nav-link" href="/logout">LOG OUT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container p-4">
+    <div class="col-md-4 mx-auto">
+        <div class="card-body">
+            <form action="/usuario/adds" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="ActDenominacion" placeholder="Nombre Actividad" autofocus>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" name="ActDescripcion" placeholder="Descripcion"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning btn-block">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

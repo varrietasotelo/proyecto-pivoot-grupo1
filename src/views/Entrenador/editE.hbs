@@ -1,0 +1,31 @@
+<div class="container p-4">
+    <div class="col-md-4 mx-auto">
+        <div class="card-body">
+            <form action="/Entrenador/editE/{{entrenador.IdUsuario}}" method="post">
+                <div class="form-group">
+                    <input type="text" value="{{entrenador.EntNombre}}" class="form-control" name="JugNombre" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <input type="text" value="{{entrenador.EntApellido}}" class="form-control" name="JugApellido" placeholder="Apellidos" >
+                </div>
+                <div class="form-group">
+                    <input type="number" value="{{entrenador.EntDocumento}}" class="form-control" name="JugDocumento" placeholder="Documento" >
+                </div>
+                <div class="form-group">
+                    <input type="number" value="{{entrenador.EntTelefono}}" class="form-control" name="JugTelefono" placeholder="Telefono" >
+                </div>
+                <div class="form-group">
+                    <input type="text" value="{{entrenador.EntDireccion}}" class="form-control" name="EntDireccion" placeholder="Direccion" >
+                </div>
+                <div class="form-group">
+                    <input type="email" value="{{entrenador.EntCorreo}}" class="form-control" name="JugCorreo" placeholder="email" >
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning btn-block">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

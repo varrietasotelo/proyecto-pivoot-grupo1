@@ -1,0 +1,19 @@
+<div class="container p-4">
+    <div class="col-md-4 mx-auto">
+        <div class="card-body">
+            <form action="/usuario/edit/{{actividad.IdActividad}}" method="post">
+                <div class="form-group">
+                    <input type="text" value="{{actividad.ActDenominacion}}" class="form-control" name="ActDenominacion" placeholder="Nombre Actividad" autofocus>
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" name="ActDescripcion" placeholder="Descripcion">{{actividad.ActDescripcion}}</textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-warning btn-block">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

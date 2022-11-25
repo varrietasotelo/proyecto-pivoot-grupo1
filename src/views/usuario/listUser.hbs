@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <a class="navbar-brand" href="/auth/inicio"><img src="https://i.postimg.cc/PqP9rJTF/logo-removebg-preview.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a role="button" class="btn-outline-warning btn-lg " aria-pressed="true" class="nav-link" href="/Admin/dashboard">DASHBOARD</a>
+      </li>
+      <li class="nav-item active">
+        <a role="button" class="btn-warning btn-lg shadow" aria-pressed="true" class="nav-link" href="/logout">LOG OUT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container p-4">
+    <br>
+    <h4 class="text-center">USUARIOS</h5>
+    <br>
+    <table class="table table-light table-striped table-hover">
+    <thead>
+        <tr>
+        <th scope="col">ID</th>
+        <th scope="col">ROL</th>
+        <th scope="col">NOMBRE DE USUARIO</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">ELIMINAR</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each usuario}}
+        <tr>
+        <th scope="row">{{IdUsuario}}</th>
+        <td>
+            {{IdRol}}
+        </td>
+        <td>{{UsuNombre}}</td>
+        <td>{{UsuEmail}}</td>
+        <td>
+        <a href="/usuario/deleteUser/{{IdUsuario}}" class="btn btn-danger">X</a>
+        </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</div>

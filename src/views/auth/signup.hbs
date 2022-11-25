@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <a class="navbar-brand" href="/auth/inicio"><img src="https://i.postimg.cc/PqP9rJTF/logo-removebg-preview.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a role="button" class="btn-outline-warning btn-lg active shadow" aria-pressed="true" class="nav-link" href="/signin">INICIA SESION</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3>Registro</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/signup" method="post">
+                        <div class="form-group">
+                            <input type="text" name="UsuNombre" placeholder="Nombre de usuario" class="form-control" focus required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="UsuEmail" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="UsuContraseña" class="form-control" placeholder="password" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="IdRol" class="form-control" required>
+                                <option value="2">Entrenador</option>
+                                <option value="3">Jugador</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-warning btn-block" type="submit">
+                                Registrar
+                            </button>
+                        </div>
+                        {{#if err1}}
+                            <p class="text-danger">{{err1}}</p>
+                        {{/if}}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
